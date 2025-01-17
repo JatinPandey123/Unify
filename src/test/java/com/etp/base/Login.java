@@ -18,7 +18,7 @@ import io.cucumber.junit.CucumberOptions;
 	   "Feature/a_unifylogin.feature",
 //	   "Feature/basicpromo.feature",
 	   "Feature/c_shiftbegin.feature",
-//	   "Feature/d_productscan.feature",
+	   "Feature/d_productscan.feature",
 //	   "Feature/e_billwithwalkin.feature",
 //	   "Feature/f_discountpromo.feature",
 ///	   "Feature/h_billwithreference.feature",
