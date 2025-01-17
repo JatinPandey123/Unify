@@ -186,7 +186,8 @@ public class ProductScan extends HelperClass {
 			driver.findElement(By.xpath("//div[contains(text(),' SAVE ')]")).click();
 			
 			Thread.sleep(6000);
-			driver.findElement(By.xpath("//div[contains(text(),'Reprint')]")).click();
+			WebDriverWait a =new WebDriverWait(driver, Duration.ofSeconds(10));
+			a.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Reprint')]"))).click();
 			
 			Thread.sleep(4000);
 			 productscaninvoice=driver.findElement(By.xpath("(//tr[@class='table-row ng-star-inserted'])[1]/td[1]")).getText();
